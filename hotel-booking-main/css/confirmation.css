@@ -1,0 +1,80 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensures full-page height */
+}
+
+/* Confirmation Container */
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-grow: 1; /* Pushes the footer down */
+}
+
+/* Header */
+h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Room Image */
+.booking-details img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Booking Info */
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Payment Status */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgb(2, 60, 167);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Footer Fix */
+footer {
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+    padding: 20px 0;
+}

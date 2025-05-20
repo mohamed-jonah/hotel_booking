@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header li, header a, header button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1%;
+    background-color: rgb(2, 60, 167);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);   
+    position: fixed;  /* This makes the header stay in place */
+    top: 0;           /* Ensures it stays at the top */
+    left: 0;          /* Aligns to the left */
+    width: 100%;      /* Makes it span the full width */
+    z-index: 1000;    /* Ensures it stays above other content */
+}
+body {
+    padding-top: 60px; /* Adjust based on the height of your header */
+}
+
+
+header h1 {
+    font-family: "Times New Roman", Times, serif;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+header a button {
+    padding: 9px 25px;
+    background-color: white;
+    color: rgb(2, 60, 167);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+main {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 3%;
+    color: rgb(0, 0, 0);
+}
+
+/* Hamburger menu icon - hidden by default on larger screens */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    .hamburger:hover {
+        background-color: rgb(9, 59, 153);
+    }
+    
+    .logo {
+        margin-right: auto;
+    }
+    
+    nav {
+        width: 100%;
+        display: none; /* Hidden by default on mobile */
+    }
+    
+    nav.active {
+        display: block; /* Show when active class is added */
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Move login button inside menu on mobile */
+    .cta {
+        display: none; /* Hide the default login button position */
+    }
+    
+    .mobile-cta {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .mobile-cta button {
+        width: 80%; /* Make the button wider inside the menu */
+        margin: 0 auto;
+    }
+}
+
+/* Desktop styles - hide mobile elements */
+@media screen and (min-width: 769px) {
+    .mobile-cta {
+        display: none;
+    }
+}

@@ -1,0 +1,47 @@
+.booking-form {
+    background: rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    /* Match room-card width */
+    max-width: 800px; /* Same as .room-card */
+    width: 100%;
+
+    /* Centering */
+    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.booking-form label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.booking-form input, 
+.booking-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.booking-form button {
+    background: rgb(2, 60, 167);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.room-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto; /* Ensure height is based on content */
+}
+
+.room-image {
+    flex: 1;
+}
+
+.room-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    height: auto; /* Ensure image height adjusts based on width */
+}
+
+.room-info {
+    flex: 1;
+    text-align: left;
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+.room-info h3 {
+    color: #555;
+    font-size: 24px;
+    margin: 0 0 10px 0; /* Adjust margins to reduce space */
+}
+
+.room-info p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 10px 0; /* Adjust margins to reduce space */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+label {
+    font-size: 16px;
+    color: #444;
+    margin: 0; /* Remove any default margin */
+}
+input, select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0; /* Remove any default margin */
+}
+textarea {
+    min-height: 100px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0; /* Remove any default margin */
+}
+input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0; /* Remove any default margin */
+}
+
+.button {
+    background-color: rgb(2, 60, 167);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0; /* Remove any default margin */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+}
+
+@media (max-width: 768px) {
+    .room-container {
+        flex-direction: column;
+    }
+
+    .room-image img {
+        max-width: 100%;
+    }
+}
